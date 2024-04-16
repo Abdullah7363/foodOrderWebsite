@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap')
+;
+:root{ 
+--maincolor:#FF204E;
+--back-color:#A0153E;
+--smal-color:#5D0E41;
+--Sacondarycolor:#ffffff;
+--lightcolor:#a7a5a5;
+--large-color:#00224D;
+--marginTopSection:200px;
+--marginBottomSecrion:200px;
+--main-transistion:0.6s linear ;
+--main-hightSection:100vh;
+--main-widthSection:100%;
+--mainshadow:0 0 10px #ddd;
+--mainborderRaides:5px;
+
+} 
+*{
+padding: 0;
+margin: 0;
+}
+.selector-for-some-widget {
+box-sizing: content-box;
+}
+body{
+font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400px;
+  font-style: normal;
+  background-color: rgb(217, 185, 185);
+}
+html {
+scroll-behavior: smooth;
+
+}
+
+
+
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+
+}
+select {
+border: none;
+height: 38px;
+}
+
+a{
+
+text-decoration: none;
+}
+
+
+/* startLanding */
+
+.landing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--main-hightSection);
+    width: var(--main-widthSection);
+    margin-bottom: var(--marginBottomSecrion);
+    position: relative;
+
+
+
+}
+.landing-container .main-text{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+
+    flex-direction: column;
+    gap: 60px;
+    padding-left: 30px;
+
+
+
+}
+.landing-container .main-text h2{
+    font-size: 40px;
+    font-weight: bold;
+
+
+
+}
+.landing-container .main-text p{
+    
+}
+
+.landing-container .order-Btn{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+
+}
+
+.landing-container .main-image{
+flex: 1; 
+}
+
+.landing-container .main-image img{
+max-width: 100%;
+height: 350px; 
+
+}
+
+
+.ourmenu-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    margin-bottom: 200px;
+    position: relative;
+}
+.ourmenu-container >div img{
+max-width: 100%;
+height: 200px; 
+
+}
+.ourmenu-container >div img:hover{
+    animation:  rounded forwards ease-in 3s;
+    transform: rotate(0);
+
+}
+
+@keyframes rounded {
+0%{
+transform: rotate(0);
+
+    
+}
+100%{
+    transform: rotate(200deg);
+
+    
+}
+
+
+
+
+    
+
+    
+
+
+}
+
+.ourmenu-container .text-info{
+    position: absolute;
+    background-color: #06BBCC;
+    z-index: -1;
+    text-align: center;
+
+}
+
+
+/* <!-- start-features---> */
+
+.features {
+background-color: #d5d5d5;
+
+
+}
+
+.features .box >i {
+background-color: var(--maincolor);
+padding: 10px;
+border-radius: 50%;
+color: white;
+text-align: center;
+}
+.features .box >h3 {
+color: var(--maincolor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- end-features---> */
+
+
+
+
+
+
+
+
+/* start about  */
+
+.aboutContainer{
+
+    margin-top: var(--mainToppadding);
+    margin-bottom: var(--mainBottomoPpadding);
+    background-color: #06BBCC;
+    background-image: url(/images/main/foodback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+.aboutContainer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(black,black,black,30%);
+    
+}
+.aboutContainer a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: red;
+    padding: 6px;
+    
+}
+
+/* end about section */
+
+.menu {
+    background-color: #06BBCC
+
+}
+
+.menu .box img{
+height: 220px;
+
+}
+.menu .box {
+height: 250px;
+position: relative;
+
+}
+.menu .box .info{
+position: absolute;
+top: 100px;
+left: 50%;
+transform: translate(-50%,-50%);
+height: 250px;
+width: 85%;
+z-index: 20;
+border-radius: var(--mainborderRaides);
+/* z-index: -1; */
+background-color: rgb(190, 190, 190);
+padding: 20px;
+box-shadow: var(--mainshadow);
+
+
+}
+
+
+
+.cart-tab {
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    width: 200px;
+    inset: 0 -400px 0 auto;
+    /* inset => top right bottom left */
+
+    display: grid;
+    grid-template-rows: 40px 100px 1fr ;
+    transition: transform .6s;
+    /* display: none; */
+    
+
+ }
+ body.show-cart   .cart-tab {
+    inset: 0 0 0 auto;
+
+ } 
+ body.show-cart   .cart-container {
+    transform: translateX(-250px);
+ }
+
+ .cart-tab  .btn{
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+ }
+
+  .btn  button{
+    border: none;
+    font-weight: bold;
+
+
+
+ }
+ .btn .close{
+    background-color: red;
+    cursor: pointer;
+ }
+
+ .cart-tab .listcart .item img {
+    height: 50px;
+    width: 100%;
+
+ }
+  .listcart  {
+    /* overflow: auto; */
+ }
+
+ .listcart .item {
+    display: grid;
+    grid-template-columns: 90px 79px 40px 1fr ;
+    align-items: center;
+    background-color: rgb(167, 167, 167);
+
+ }
+ .listcart::-webkit-scrollbar {
+    width: 0;
+ }
+
+ .listcart .item:nth-child(even) {
+    background-color: rgb(107, 107, 107);
+ }
+
+/* start AD-back-image section */
+
+.AD-back-image {
+height: 300px;
+width: 100%;
+background-image: url(../images/main/diiner.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+z-index: -1;
+position: relative;
+}
+.AD-back-image::before {
+left: 0;
+top: 0;
+position: absolute;
+height: 100%;
+width: 100%;
+content: '';
+background-color: rgba(0, 0, 0, 0.615);
+
+
+
+}
+.AD-back-image p,.row-btns,h3 {
+z-index: 20;
+
+
+}
+.AD-back-image p{
+max-width: 700px;
+margin: 14px auto 14px;
+line-height: 30px;
+}
+
+
+.tistemuns .card-box
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+
+}
+
+.tistemuns  .active{
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end AD-back-image section */
+
+
+
+
+
+
+
+
+
+
+ .chefs-team .box img {
+    height: 100%;
+    width: 100%;
+ }
+
+
+.chefs-team .box h4 {
+position: absolute;
+height: 50px;
+width: 100%;
+left: 0;
+bottom: -9px;
+background-color: rgba(27, 92, 255, 0.24);
+color: white;
+text-align: center;
+
+
+
+}
+
+.our-chefs  p{
+max-width: 550px;
+margin: 0 auto 30px;
+}
+
+#contact .form input {
+    background-color: #a7a5a5;
+    border: none;
+    outline: none;
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+/* #contact .form input {
+} */
+
+.card-section{
+    display: none;
+}
+
+
+
+
+
+
+.testing {
+    background-color: #00224D;
+    max-height: 200px;
+
+}
+
+.shoping-icon span{
+position: absolute;
+height: 20px;
+width: 20px;
+bottom: -6px;
+right: 3px;
+background-color: red;
+
+color: white;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+}
+
+.listOfOrders {
+position: fixed;
+max-width: 300px;
+background-color: #00224D;
+height: 100%;
+color: white;
+inset: 0 0 0 0;
+z-index: 50;
+
+}
+
+.listOfOrders .orderbox:nth-child(even){
+    background-color: #06BBCC;
+    width: 100%;
+}
+.listOfOrders .orderbox{
+display: flex;
+justify-content: space-between;
+align-items: center;
+  
+
+}
+.listOfOrders .orderbox img{
+height: 50px;
+width: 100%;
+}
+
+
+ .about   {
+    background-color: #fff4f7;
+    overflow: hidden;
+ 
+} 
+.about .image-holder .rounded-bulets{
+position: absolute;
+display: grid;
+
+
+}
+.about .image-holder .rounded-bulets span{
+background-color: #00224D;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+}
+.about img  {
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
