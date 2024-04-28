@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>foodOrder</title>
+
 <link rel="stylesheet" href="css/style.css">
 <!-- reder-css-files -->
 <link rel="stylesheet" href="css/normalize.css">
@@ -22,36 +23,41 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light ">
+<!-- Start Nav-->
+<nav class="navbar navbar-expand-lg    fixed-top  nav-Bar   navsetion nav-section ">
     <div class="container-fluid">
-      <a class="navbar-brand fs-10 fw-bold text-success" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fs-10 fw-bold text-white" href="#">Food</a>
+      <button  class="navbar-toggler  bg-dark"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto text-center me-4  mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto text-center   me-auto  mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#chefs">chefs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
-        
         
         
          
         </ul>
-<i class="fa-brands fa-linkedin me-4  bg-dark p-2 rounded-pill shoping-icon position-relative" style="color: #efeff4;"> <span>1</span> </i>
+  <div class="icon-cart position-relative me-4 ">
+    <img src="icons/cart.png" alt="" class="">
+    <span class='shopnumber rounded-pill bg-light text-dark'>0</span> 
+
+  </div>
         
       </div>
     </div>
   </nav>
+<!-- Start Nav -->
 
 
 <!------------------------ card-products----------------------- -->
@@ -61,7 +67,7 @@
   <h4>myOrder</h4>
 <div class="orderbox ">
   <div class="imgage-box">
-    <img src="images/main/diiner.jpg" alt="">
+    <img src="images/main/menu4.jpg" alt="">
   </div>
   <div class="info">
     <h5>title</h5>
@@ -131,7 +137,7 @@
 <!------------------------------  End-card-products --------------------->
 
 <section id="landing">
-<div class="container mt-4 mb-4">
+<div class="container mt-5 mb-4">
 <div class="row">
 <div class="col-lg-6 text-start main-text d-flex justify-content-center flex-column gap-5">
 <h3 class="fw-bold text-uppercase lh-4 fs-1 ">The best fastest in delivering your <span class="text-success">food!</span> </h3>
@@ -139,16 +145,17 @@
 consectetur adipisicing elit. Nemo
 Corrupti accusamus fugiat cumque! Sunt, dolorum fuga! Rem numquam minus sed!</p>
 <div class="order-Btn">
-<a href="#" class="btn btn-dark rounded-pill text-white ">Order know</a>
-<i class="fa-brands fa-linkedin bg-danger rounded-circle p-2 ms-5" style="color: #141415;"></i>
+<a href="#" class="btn btn-success rounded-pill text-white ">Order know</a>
+<img class="bg-success rounded-pill p-2" src="images/main/play.png" style="height: 30px; width:30px; ;" alt="">
 <span>watch video</span>
 
 </div>
 
 
       </div>
-      <div class="col-lg-6 ">
-        <img class="img-fluid " src="images/main/diiner.jpg" alt="">
+      <div class="col-lg-6 d-lg-block d-none d-lg-block ">
+        <img class="img-fluid " src="images/main/landing.png"  alt="" style="height: 100%; min-width: ;: 100%;">
+
 
       </div>
 
@@ -160,103 +167,8 @@ Corrupti accusamus fugiat cumque! Sunt, dolorum fuga! Rem numquam minus sed!</p>
 
 <!--- -------------------   end-landing -section----------------- -->
 
-
-
-<!-- start-features--->
-
-<div class="features text-start mt-5 mb-5">
-<div class="container">
-  <div class="main-title text-uppercase  mt-6 mb-6">
-    <h2 class="text-center position-relative header-title">we are good at</h2>
-  </div>
-  <div class="row mt-5">
-  <div class="col-md-6 col-lg-4">
-  <div class="box">
-  <i class="fa-brands fa-linkedin text-center" ></i>
-  <h3 class=" mt-2 mb-2 ">subject</h3>
-  <p class="text-secondary lh-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Reprehenderit beatae praesentium ducimus explicabo quos
-  totam debitis amet!</p>
-  </div>
-  </div>
-  <div class="col-md-6 col-lg-4 lh-4">
-    <div class="box">
-    <i class="fa-brands fa-linkedin"  ></i>
-    <h3 class=" mt-2 mb-2 ">subject</h3>
-    <p class="text-secondary ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Reprehenderit beatae praesentium ducimus explicabo quos
-    totam debitis amet!</p>
-    </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="box">
-      <i class="fa-brands fa-linkedin   " ></i>
-      <h3 class=" mt-2 mb-2 ">subject</h3>
-      <p class="text-secondary lh-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Reprehenderit beatae praesentium ducimus explicabo quos
-      totam debitis amet!</p>
-      </div>
-      </div>
-     
-  
-  
-        </div>
-    
-
-</div>
-
-  </div>
-
-<!-- end-features--->
-
-
-
-
-
 <!-- /ourMenu settion start-->
-
-
-
-
-<!-- start about section -->
-
-
-<!-- end about  -->
-
-
-
-
-
-
-  <!-- <div class="menubox">
-
-<h4>dokd</h4>
-<h5>44444</h5>
-
-
-</div>
-<div class="menubox">
-  <h4>dokd</h4>
-  <h5>44444</h5>
-  
-  </div>
-  <div class="menubox">
-    <h4>dokd</h4>
-    <h5>44444</h5>
-    
-    </div> -->
-    
-  
-
-
-
-
-
-
-
-
-
-<section class="our-chefs ">
+<section id="chefs"   class="our-chefs ">
 <div class="container text-center mt-5 mb-5">
 <h3 class="fw-bold text-uppercase ">our spacial chefs</h3>
 <p class="lh-2 text-md-start text-sm-start text-lg-center  fs-9 text-black-50 " >Lorem sum dolor, sit
@@ -269,22 +181,14 @@ iusto recusandae nulla ad dolor quas expedita
   <div class="row mt-4 chefs-team">
     <div class="col-lg-3 text-center col-md-6 col-sm-12 ">
       <div class="box img-fluid  position-relative  ">
-      <img src="images/main/client-img.png" alt="" class="rounded-2" >
+      <img src="images/main/chef.jpg" alt="" class="rounded-2" >
       <h4>name</h4>
       </div>
 
     </div>
     <div class="col-lg-3 text-center col-md-6 col-sm-12">
       <div class="box img-fluid position-relative">
-      <img src="images/main/client-img.png" alt="" >
-      <h4>name</h4>
-
-      </div>
-
-    </div>
-    <div class="col-lg-3 text-center col-md-6 col-sm-12">
-      <div class="box img-fluid position-relative">
-      <img src="images/main/client-img.png" alt="" >
+      <img src="images/main/chef.jpg" alt="" >
       <h4>name</h4>
 
       </div>
@@ -292,7 +196,15 @@ iusto recusandae nulla ad dolor quas expedita
     </div>
     <div class="col-lg-3 text-center col-md-6 col-sm-12">
       <div class="box img-fluid position-relative">
-      <img src="images/main/client-img.png" alt="" >
+      <img src="images/main/chef.jpg" alt="" >
+      <h4>name</h4>
+
+      </div>
+
+    </div>
+    <div class="col-lg-3 text-center col-md-6 col-sm-12">
+      <div class="box img-fluid position-relative">
+      <img src="images/main/chef.jpg" alt="" >
       <h4>name</h4>
 
       </div>
@@ -321,8 +233,7 @@ consectetur adipisicing elit.
 corrupti adipisci consectetur. Minus, 
 excepturi fugiat quod totam consequatur porro necessitatibus nam autem natus minima, laboriosam tempore unde!</p>
 <div class="row-btns rounded-2  gap-4 d-flex justify-content-center">
-<a href="" class="btn btn-dark">contact</a>
-<a href="" class="btn btn-success">read more</a>
+<a href="" class="btn btn-success">contact</a>
 
 </div>
 
@@ -337,25 +248,20 @@ excepturi fugiat quod totam consequatur porro necessitatibus nam autem natus min
 
 
 <!-- ----------------------startAbout------------------ -->
-<div class="about">
+<div  id="about" class="about">
 <div class="container mb-5 mt-5">
 <div class="row">
 <div class="col-md-6 col-sm-12 ">
-<div class="image-holder  mx-auto w-50   position-relative">
-<div class="rounded-bulets">
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-
-</div>
-<img src="images/main/chef.jpg" class="img-fluid" alt="">
+  <img src="shopping cart" alt="">
+<div class="image-holder  mx-auto w-75 h-100   d-none  d-lg-block 
+  ">
+<img src="images/main/about.jpg" class="img-fluid position-relative" alt="" style="height: 450px;">
 </div>
 
 </div>
-<div class="col-md-6 col-sm-12 d-flex justify-content-between align-items-start flex-column ">
-  <div class="about-info">
+<div class="col-md-6 col-sm-12 d-flex justify-content-between align-items-start 
+ justify-content-sm-center justify-content-sm-center    flex-column ">
+  <div class="about-info  justify-content-md-center align-items-md-center    ">
 <h5>about us  </h5>
 <h2 class="fs-2 fw-bold lh-2 text-capitalize ">we make yummy <br> food in market</h2>
 <p class="text-black-50 lh-lg w-50  me-auto  mb-4">Lorem ipsum dolor sit amet more consectetur
@@ -363,7 +269,7 @@ adipisicing elit. At info reprehenderit suscipit
 aperiam eum officia recusandae quos maxime  
 be quidem fuga delectus eaque neque esse beatae repellat enim.</p>
 </div>
-<a href="" class=" btn btn-dark text-white p-2 rounded-2" >Read more</a>
+<a href="" class=" btn btn-success text-white p-2 rounded-2" >Read more</a>
   </div>
 
 </div>
@@ -373,11 +279,6 @@ be quidem fuga delectus eaque neque esse beatae repellat enim.</p>
 
 
 </div>
-
-
-
-
-
 
 
 
@@ -391,92 +292,111 @@ be quidem fuga delectus eaque neque esse beatae repellat enim.</p>
 
 
 
+<!-- ---------------------StartFoodMenu---------------------------------- -->
+
+<div id="menu" class="menu-food">
+
+<h5 class="text-center fs-1">menu </h5>
+<div class="menu-holder">
+    
+<div class="container menu-box mt-4  active ">
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- start Tistemuns -->
-
-<div class="tistemuns">
-<div class="main-title text-uppercase  mt-6 mb-6 text-center">
-<h2>tistemuns</h2>
-</div>
-<div class="card-box active  ">
-<div class="card bg-secondary p-4 ">
-<div class="card-text d-flex justify-content-center gap-5 align-items-center">
-<div class="info d-flex justify-content-center gap-2 align-items-center ">
-<i class="fa-brands fa-linkedin   "   style="color: #6101ce; font-size: 50px;"></i>
-<div class="name d-flex flex-column justify-content-center gap-1 ">
-  <small>jdoq</small>
-  <small>jdoq</small>
 
 </div>
-</div>
-<div class="rateing d-flex justify-content-center gap-1 align-items-center">
-<i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-<i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-<i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-<i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-</div>
-</div>
-    <p>Lorem ipsum dolor sit amet consectetur 
-      adipisicing elit. Porro ea assumenda laboriosam 
-      possimus rem molestias expedita facere 
-      minus ipsum et voluptatem eius?</p>
-    </div>
-    <div class="card bg-danger p-4">
-      <p>Lorem ipsum dolor sit amet consectetur 
-        adipisicing elit. Porro ea assumenda laboriosam 
-        possimus rem molestias expedita facere 
-        minus ipsum et voluptatem eius?</p>
-    </div>
-</div>
-<div class="card-box   ">
-  <div class="card bg-secondary p-4 ">
-  <div class="card-text d-flex justify-content-center gap-5 align-items-center">
-  <div class="info d-flex justify-content-center gap-2 align-items-center ">
-  <i class="fa-brands fa-linkedin   "   style="color: #6101ce; font-size: 50px;"></i>
-  <div class="name d-flex flex-column justify-content-center gap-1 ">
-    <small>tow</small>
-    <small>tow</small>
+
+<!-- cart-products  -->
+<div class="cart-products ">
+<h3  class="text-center">  
+  my orders</h3>
+  <div class="totelCart  d-flex justify-content-center align-items-center" >
+    <i class=" rounded-2 btn bg-light " id="close-Cart">close</i>
+    <h5 class="rounded-2 btn btn-dark text-white w-50 ms-5 text-center" >Totel price
+       <i class="d-lg-block Tot-price"></i>  </h6>
+
+  </div>
+
+<div class="cart-container">
+
+<!-- <div class="box">
+  <div class="cart-image">
+  <img src="images/main/food2.png" alt="">
+  </div>
+  <div class="info">
+  <h4>tile</h4>
+  <h5>4000Ry</h5>
+  </div>
+   <div class="counter">
+  <span class="minus">-</span>
+        <span class="counter-num">0</span>
+
+  <span class="plus">+</span>
+
+  
   
   </div>
+  
+  
   </div>
-  <div class="rateing d-flex justify-content-center gap-1 align-items-center">
-  <i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-  <i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-  <i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-  <i class="fa-brands fa-linkedin   "   style="color: #6101ce;"></i>
-  </div>
-  </div>
-      <p>Lorem ipsum dolor sit amet consectetur 
-        adipisicing elit. Porro ea assumenda laboriosam 
-        possimus rem molestias expedita facere 
-        minus ipsum et voluptatem eius?</p>
+  <div class="box">
+    <div class="cart-image">
+    <img src="images/main/food2.png" alt="">
+    </div>
+    <div class="info">
+    <h4>tile</h4>
+    <h5>4000Ry</h5>
+    </div>
+    <div class="counter">
+    <span class="minus">-</span>
+          <span class="counter-num">0</span>
+
+    <span class="plus">+</span>
+
+    
+    
+    </div>
+    
+    
+    </div>
+
+    <div class="box">
+      <div class="cart-image">
+      <img src="images/main/food2.png" alt="">
       </div>
-      <div class="card bg-danger p-4">
-        <p>Lorem ipsum dolor sit amet consectetur 
-          adipisicing elit. Porro ea assumenda laboriosam 
-          possimus rem molestias expedita facere 
-          minus ipsum et voluptatem eius?</p>
+      <div class="info">
+      <h4>tile</h4>
+      <h5>4000Ry</h5>
       </div>
-  </div>
+      <div class="counter">
+      <span class="minus">-</span>
+            <span class="counter-num">0</span>
 
-<div class="arrow-btns d-flex justify-content-center align-items-center gap-4 text-white mt-4">
-  <a  class="btn btn-dark left-arrow ">left</a>
-  <a  class="btn btn-dark p-2 rounded-bill right-arrow">rigt</a>
+      <span class="plus">+</span>
+
+      
+      
+      </div>
+      
+      
+      </div> -->
+<!-- <div class="totelPrice">
+<p>totel <span class="totel-count">4000Ry</span></p>
+<a href="#">checkout</a>
+</div> -->
+
+
 </div>
+
+
+
+
+
 </div>
 
-<!-- end Tistemuns -->
+
+
+
+<!-- cart-products -->
 
 
 
@@ -493,131 +413,64 @@ be quidem fuga delectus eaque neque esse beatae repellat enim.</p>
 
 
 
-<!-- start contact us section -->
 
-<section id="contact">
-<div class="container text-center mt-5 mb-5">
+<!-- ---------------------EndFoodMenu----------------------------------- -->
+<!-- start footer -->
+<div class="footer">
+<div class="container text-center p-5">
 <div class="row">
-<div class="col-lg-6 ">
-<h5 class="fw-bold text-uppercase ">contact us</h5>
-<h2 class="fw-bold text-uppercase ">lets talk</h2>
-<p class="lh-2 text-md-start text-sm-start text-lg-center  fs-9 text-black-50 " >Lorem sum dolor, sit
-amet consectetur adipisicing elit.
-iusto recusandae nulla ad dolor quas expedita
-rem quos esse illum ullam?</p>
+<div class="col-lg-3 col-md-6 col-sm-12">
+<div class="logo">
+<img src="images/main/star.png" alt="">
 </div>
-<div class="col-lg-6 col-md-12 col-sm-12 text-center">
-<div class="box img-fluid position-relative ">
-  <img  class="d-none d-lg-block " src="images/main/client-img.png " alt=""  >
-  <h4>name</h4>
+<p class="mt-2">Lorem ipsum, dolor
+   sit amet consectetur adipisicing
 
-  </div>
+    nesciunt minus omnis aliquam laboriosam error 
+  dolore, tempore cumque? Sapiente, officiis reiciendis.</p>
+
 
 </div>
+<div class="col-lg-3 col-md-6 col-sm-12">
+<ul class="links" >
+<li>firdykdoe </li>
+<li>firdy oefo </li>
+<li>firdyefo </li>
+<li>firdy oekfp</li>
+
+</ul>
+
 
 </div>
-
-<div class="row">
-<div class="col-lg-6 d-flex justify-content-center flex-column text-start form">
-    <label for="name">name</label>
-    <input type="text">
-    <label for="emali">name</label>
-    <input type="text">
-    <textarea name="" id="" cols="30" rows="10" class="bg-secondary"></textarea>
-    
-    <a href="">button</a>
+<div class="col-lg-3 col-md-6 col-sm-12">
+  <ul class="links" >
+  <li>firdy </li>
+  <li>firdy </li>
+  <li>firdy </li>
+  <li>firdy </li>
   
-
-</div>
-<div class="col-lg-6">
-  <h6>phone</h6>
-  <h6>info</h6>
-  <h6>address</h6>
-
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- hide contact not in large  -->
-<!-- d-none  d-lg-block -->
-
-<!-- end about us section -->
-
-
-
-
-
-<section id="features">
-  <div class="features text-center mt-5 mb-5">
-  <div class="container">
-  <div class="main-title text-uppercase  mt-6 mb-6">
-    <h2>we are good at</h2>
+  </ul>
+  
+  
   </div>
-  <div class="row">
-  <div class="col-md-6 col-lg-4">
-  <div class="boxcon">
-  <div class="box img-fluid ">
-    <img src="images/main/diiner.jpg" alt="" style="width: 100%;" >
-  </div>
-  <h3 class=" mt-4 mb-4 ">name</h3>
- 
-  </div>
-  </div>
-  <div class="col-md-6 col-lg-4">
-    <div class="boxcon">
-      <div class="box img-fluid" >
-      <img src="images/main/diiner.jpg" alt="" style="width: 100%;" >
 
-    </div>
-    <h3 class=" mt-4 mb-4 ">name</h3>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-start">
+  <h4 class="mb-4">if you got more updats</h4>
+    
+  <div class="email-news rounded-2 mb-4 d-flex justify-content-between align-items-center p-2 bg-light">
+    <input type="email" placeholder="email" >
+    <a href="#" class="rounded-pill d-flex align-items-center justify-content-center bg-dark p-2 ">*</a>
+
     
     </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="boxcon">
-        <div class="box img-fluid" >
-          <img src="images/main/diiner.jpg" alt="" style="width: 100%;" >
-    
-      </div>
-      <h3 class=" mt-4 mb-4 ">name</h3>
-     
-      </div>
-      </div>
-     
-  
-  
-        </div>
-    
-  
-      </div>
-     
-  
-    </div>
-  
-  </section>
 
 
-<div id="last" class="d-flex justify-content-center gap-2 align-items-center mb-5" >
-
-</div>
-
-
-
-<div class="testing d-flex justify-content-center gap-4 mb-5 mt-5 text-white">
-  <h5 class="tot-price m-4">0</h5>
-  <h5 class="tot-price m-4 bg-secondary">totle <span class="sumprice">0</span></h5>
 
 
 
 </div>
 
-<div class="shoping-cart mt-5 mb-5 text-white bg-danger d-flex justify-content-center align-items-center gap-2 flex-column" >
+
 
 </div>
 
@@ -626,39 +479,7 @@ rem quos esse illum ullam?</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- end footer -->
 
 
 

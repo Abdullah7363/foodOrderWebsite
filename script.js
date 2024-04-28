@@ -1,614 +1,501 @@
 
-let cardsection=document.querySelector('.card-section');
-
-
-$(document).ready(function(){
-    $('.ss').siblings().css({'color':'blue'});
-});
-
-console.log()
-// let menucontainer=document.querySelector('.menu-container .card');
-// let card=Array.from(document.querySelectorAll('.card'));
-
-
-// let listmenu=document.querySelector('.list-menu');
-
-// let listcart=document.querySelector('.listcart');
-// console.log(listcart);
-
-// const addToproductsContianer=()=>{
-
-//     listmenu.innerHTML='';
-//     productsArr.forEach((product)=>{
-//         if (productsArr.length>0){
-//             let newitem=document.createElement("div");
-//             newitem.classList.add('item');
-//             // create new dataAttripute and assin it to id if the product
-//             newitem.dataset.id=product.id;
-//             // newitem.innerHTML=' <h3>${product.}</h3>' ;
-//             // get  the title from json file to main page 
-//             let tit=document.createElement("h3");
-//             let tittext=document.createTextNode(product.name);
-//             tit.appendChild(tittext);
-//             newitem.appendChild(tit);
-
-
-//             let price=document.createElement("div");
-//             let pricetxt=document.createTextNode(product.price);
-//             price.appendChild(pricetxt);
-//             newitem.appendChild(price);
-
-
-//             let cartbtn=document.createElement("div");
-//             cartbtn.classList.add('add-cart');
-//             let text=document.createTextNode("add");
-//             cartbtn.appendChild(text);
-//             newitem.appendChild(cartbtn);
-//             listmenu.appendChild(newitem);
-
-
-//         }
-
-
-//     });
-//     console.log(listmenu);
-
-
-// }
-
-// addToproductsContianer();
-
-
-// document.addEventListener("click",(e)=>{
-
-// let target=e.target;
-// if (target.classList.contains('add-cart')){
-// let targetId=target.parentElement.dataset.id;
-// addtoCart(targetId);
-
-// }
-
-
-// });
-
-
-// let carts=[];
-// const addtoCart=(cardId)=>{
-//     let positionofId=carts.findIndex((value)=>value.targetId==cardId);
-//     if (carts.length<=0){
-//         carts=[
-//             {
-//                 targetId:cardId,
-//                 qaintity:1
-
-//             }
-
-//         ]
-
-
-//     }
-//     // if there is no items in the card
-//     else if (positionofId <0){
-//         carts.push(
-//             {
-//                 targetId:cardId,
-//                 qaintity:1
-    
-    
-//             }
-           
-//         )
-
-//     }
-//     else {
-//         carts[positionofId].qaintity+=1;
-    
-//     }
-
-    // addcartTopage();
-
-// }
-
-
-// let totel=0;
-// const addcartTopage=()=>{
-// listcart.innerHTML='';
-// if (carts.length > 0){
-// carts.forEach((cart)=> { 
-  
-// let indexofproduct=productsArr.findIndex((value)=>value.id==cart.targetId);
-// let infocart=[indexofproduct];
-// totel=totel + cart.quitity;
-
-
-
-// // add titte
-// let cartdiv=document.createElement("div");
-// cartdiv.classList.add('item');
-// let tittlehtml=document.createElement("h3");
-// tittlehtml.classList.add('title');
-// let titeltext=document.createTextNode(infocart.name);
-// tittlehtml.appendChild(titeltext);
-// cartdiv.appendChild(tittlehtml);
-// // add price
-// let pricspan=document.createElement("h2");
-// pricspan.classList.add('price');
-// let pricetext=document.createTextNode(infocart.price);
-// pricspan.appendChild(pricetext);
-// cartdiv.appendChild(pricspan);
-
-// // add quitity
-// let divquaintity=document.createElement('div');
-// divquaintity.classList.add('qunNumber')
-// let quaintityspan=document.createElement("h2");
-// let quaintityText=document.createTextNode(cart.qaintity);
-// quaintityspan.appendChild(quaintityText);
-// divquaintity.appendChild(quaintityspan);
-// // add minus
-// let minusbtn=document.createElement("span");
-// minusbtn.classList.add('minus');
-// let minustex=document.createTextNode("-");
-// minusbtn.appendChild(minustex);
-// minusbtn.style.marginLeft='6px';
-// divquaintity.appendChild(minusbtn);
-
-
-// add plus bttom 
-// let plusbtn=document.createElement("span");
-// plusbtn.classList.add('addbtn');
-// let plustext=document.createTextNode("+");
-// plusbtn.appendChild(plustext);
-// divquaintity.appendChild(plusbtn);
-// cartdiv.appendChild(divquaintity);
-// // add all new elements to the card container
-// listcart.appendChild(cartdiv);
-//         });
-
-//     }
-// // update quantity value 
-// // shopnuber.innerHTML=totel;
-
-
-
-
-// }
-
-// update quantity value 
-// shopnuber.innerHTML=totel;
-
-
-
-
-// }
-
-// document.addEventListener("click",(e)=>{
-//     if (e.target.classList=="addbtn"){
-//         console.log(e.target.parentElement);
-
-//     }
-// });
-
-
-
-
-
-
-
-
-// add image dynamic to the page 
-// let myimg=document.querySelector('.main-image');
-// let imgadata=document.createElement('img');
-// imgadata.src=productsArr[1].image;
-// myimg.appendChild(imgadata);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let products=[];
-// const initapp =()=>{
-// fetch("jeson.json").then(response => response.json())
-// .then(data => {
-// products=data;
-// console.log(products);
-
-//     })
-// }
-
-// initapp();
-
-
-
-
-// let myrequst=new XMLHttpRequest();
-// myrequst.open("GET","https://catfact.ninja/fact",true);
-// myrequst.send();
-
-// myrequst.onreadystatechange=function(){
-//     if (this.readyState==4 && this.status===200 ){
-//         console.log(this.responseText);
-
-//     }
-// }
-
-
-
-
-
-// promise
-
-
-// let mypromis=new Promise((resolvem,rej)=> {
-//     let conection=false;
-//     if (conection ){
-//         resolvem("is good");
-//     }
-//     else {
-//         rej("nosssss");
-//     }
-
-// }).then((s)=>console.log(s)).catch((err)=>err)
-// ;
-
-
-// let leftarrow=document.querySelector('.left-arrow');
-// let rightarrow=document.querySelector('.right-arrow');
-// let cardbox=document.querySelector('.card-box '); 
-
-
-// leftarrow.addEventListener("click",()=>{
-//     if (!cardbox.classList.contains("active")){
-//         cardbox.classList.remove('active');
-
-
-
-//     }
-
-
-
-
-// })
-
-
-
-// fetch data from jeson file 
-// async function getallproducts(){
-
-//     try {
-//         let alldata=await fetch("./jeson.json");
-//         listfoodItems= await alldata.json();
-//         console.log(listfoodItems);
-
-//     }
-//     catch(why) {
-//     console.log(why)
-//     }
-
-//     finally {
-//         console.log("allgood")
-//     }
-
-
-
-// }
-
-// getallproducts();
-
-
-
-
-
-
-const allfoodlist=[
+const foodList=
+[
     {
     "id":1,
-    "name":"pizza",
+    "name":"salad",
     "price":4000,
     "rate":4.3 ,
-    "image":"images/main/food1.png"
+    "image":"images/main/food1.png",
+    "star_icon":"images/main/star.png"
+    
     },
     {
     "id":2,
     "name":"passta",
     "price":2000,
     "rate":4.6 ,
-    "image":"images/main/food1.png"
-
+    "image":"images/main/food2.png",
+    "star_icon":"images/main/star.png"
+    
+    
     }
     ,
     {
     "id":3,
-    "name":"burgger",
+    "name":"pizza",
     "price":5000,
     "rate":3.5 ,
-    "image":"images/main/food2.png"
-
+    "image":"images/main/food7.png",
+    "star_icon":"images/main/star.png"
+    
+    
+    },
+    {
+    "id":4,
+    "name":"pizza",
+    "price":5000,
+    "rate":3.5 ,
+    "image":"images/main/food5.png",
+    "star_icon":"images/main/star.png"
+    
+    },
+    {
+    "id":5,
+    "name":"salad",
+    "price":5000,
+    "rate":3.5 ,
+    "image":"images/main/food6.png",
+    "star_icon":"images/main/star.png"
+    
+    },
+    {
+    "id":6,
+    "name":"pizza",
+    "price":5000,
+    "rate":3.5 ,
+    "image":"images/main/food8.png",
+    "star_icon":"images/main/star.png"
+    
+    },
+    {
+    "id":7,
+    "name":"pizza",
+    "price":5000,
+    "rate":3.5 ,
+    "image":"images/main/food9.png",
+    "star_icon":"images/main/star.png"
+    
+    },
+    
+    {
+    "id":8,
+    "name":"salad",
+    "price":5000,
+    "rate":3.5 ,
+    "image":"images/main/food11.png",
+    "star_icon":"images/main/star.png"
+    
     }
- ]
+    
+    
+    
+    ]
+    
+let cardsection=document.querySelector('.card-section');
+// get and set values menu food container
+
+let menubox=document.querySelector('.menu-box');
+
+    
+
+
+menubox.innerHTML='';
+
+// loop thro all data
+foodList.forEach((product)=>
+
+{
+// add image to box
+let boxdiv=document.createElement("div");
+
+boxdiv.className='box';
+boxdiv.dataset.id=product.id;
+
+// add btn div
+
+let addBtndiv=document.createElement('div');
+let addBtnEle=document.createElement('h6');
+addBtndiv.className='icon-cart';
+addBtnEle.className='insert-cart';
+let Btntxt=document.createTextNode('+');
+addBtnEle.appendChild(Btntxt);
+addBtndiv.appendChild(addBtnEle);
+boxdiv.appendChild(addBtndiv);
 
 
 
-let totelsumprice=document.querySelector('.tot-price');
-let testing=document.getElementById('last');
-testing.innerHTML='';
-const showdata=function(){
-allfoodlist.forEach(item => {
-let card=document.createElement("div");
-card.dataset.id=item.id;
-card.className="item";
-let price=document.createElement("h5");
-let pricetxt=document.createTextNode(item.price);
-price.appendChild(pricetxt);
-let btn=document.createElement("h6");
-btn.className="btn";
-let btnetxt=document.createTextNode("add");
-btn.appendChild(btnetxt);
-let name=document.createTextNode(item.name);
-card.appendChild(name);
-card.appendChild(price);
-card.append(btn);
-testing.appendChild(card);
-// addtocart(card.id);
-});
+// add image div
+let imgdiv=document.createElement('div');
+imgdiv.className='image-holder';
+let imgele=document.createElement("img");
+imgele.src=`${product.image}`;
+let imageholder=document.createTextNode(imgele);
+imgele.appendChild(imageholder);
+imgdiv.appendChild(imgele);
+boxdiv.appendChild(imgdiv);
+menubox.appendChild(boxdiv);
+console.log(boxdiv);
+// add title to box 
+let titleEle=document.createElement('h4');
+let titletText=document.createTextNode(product.name);
+titleEle.appendChild(titletText);
+imgdiv.appendChild(imgele);
+boxdiv.appendChild(titleEle);
+
+// addpriceinfo
+
+let pricediv=document.createElement('div');
+pricediv.className='price-info';
+let priceEle=document.createElement('h6');
+let pricetxt=document.createTextNode(product.price+'RY');
+priceEle.appendChild(pricetxt);
+pricediv.appendChild(priceEle);
+
+
+// addRate
+
+let ratediv=document.createElement('div');
+ratediv.className='rate'
+let rateimg=document.createElement('img');
+rateimg.src=`${product.star_icon}`;
+rateimg.style.height='15px';
+rateimg.style.width='15px';
+
+let imagholda=document.createTextNode(rateimg);
+rateimg.appendChild(imagholda);
+
+let smalele=document.createElement('small');
+let ratetxt=document.createTextNode(product.rate);
+smalele.appendChild(ratetxt);
+ratediv.appendChild(smalele);
+ratediv.appendChild(rateimg);
+pricediv.appendChild(ratediv);
+
+boxdiv.appendChild(pricediv);
+
+
+// add Button to cart
+
+
+
+
 }
-document.addEventListener("click",(e)=>{
-let targetbtn=e.target;
-if (targetbtn.classList.contains('btn')){
-let selectedid=targetbtn.parentElement.dataset.id;
-addShopCart(selectedid);
-    // let positionofId=carts.findIndex((value)=>value.selectedId==id_product);
+
+
+);
+
+
+document.addEventListener(('click'),(e)=>{
+let target=e.target;
+if (target.classList.contains('insert-cart')){
+let targetindex=target.parentElement.parentElement.dataset.id;
+
+
+addcartstoCart(targetindex);
+
+ 
 }
+
+
 });
 
-let listOfCarts=[];
+let countNum=1;
+ var alllistCarts=[];
+const addcartstoCart=(targetindex)=>{
+let indexCart=alllistCarts.findIndex((value)=>value.selectedid===targetindex);
 
-const addShopCart=(item_id)=>{
-let positionofId=listOfCarts.findIndex((value)=>value.selectedid==item_id);
-
-if (listOfCarts.length <= 0){
-listOfCarts=[
-    listOfCarts={
-        selectedid:item_id,
+console.log(indexCart);
+if (alllistCarts.length <= 0){
+    alllistCarts=[
+        {
+        selectedid:targetindex,
         qunatity:1
         }
-]
-
+    ]
+    
 }
-else if  (positionofId <0) {
-    listOfCarts.push({
-        selectedid:item_id,
+// if product not in cart list
+else if  (indexCart <0) {
+    alllistCarts.push({
+        selectedid:targetindex,
         qunatity:1
     }
-    )
+    );
 
+    
 }
 else {
-    listOfCarts[positionofId].qunatity+=1;
-    console.log(listOfCarts);
+    alllistCarts[indexCart].qunatity=alllistCarts[indexCart].qunatity + 1
+    
 
 }
 addCartToPage();
+addTolocalStorge(alllistCarts);
+
 }
-let shopingcart=document.querySelector('.shoping-cart');
 
-let sumprice=document.querySelector('.sumprice');
-const addCartToPage=()=>{
-shopingcart.innerHTML='';
-let sumallquintity=0;
-let allprictot=0;
-listOfCarts.forEach((cart)=>{
-let indexofproduct=allfoodlist.findIndex((value)=>value.id==cart.selectedid);
-let indexofcarts=allfoodlist[indexofproduct];
-// number of products  added in  cart
-let totprice=indexofcarts.price * cart.qunatity;
-sumallquintity=sumallquintity + cart.qunatity;
-totelsumprice.innerHTML=sumallquintity;
-// totel of all products in the cart
-allprictot=allprictot + (indexofcarts.price * cart.qunatity);
-sumprice.innerHTML=allprictot;
 
-let divcart=document.createElement("div");
-divcart.className="cart-box";
-divcart.dataset.id=cart.selectedid;
-let nameEle=document.createElement("h3");
-let nametxt=document.createTextNode(indexofcarts.name);
-nameEle.appendChild(nametxt);
-divcart.append(nameEle);
+// set all data cars to  memory
 
-// add-pric
-console.log(divcart);
+const addTolocalStorge=(alllistCarts)=>{
+    window.localStorage.setItem('items',JSON.stringify(alllistCarts));
+}
 
-let spanprice=document.createElement("span");
-let pricetxt=document.createTextNode(totprice);
-spanprice.style.margin="40px";
-spanprice.appendChild(pricetxt);
-nameEle.appendChild(spanprice);
-// //addimage
-// let imgEle=document.createElement("img");
-// imgEle.src=""
-// DelEle.style.margin="40px";
-// let Deltxt=document.createTextNode(c);
-// DelEle.appendChild(Deltxt);
-// nameEle.append(DelEle);
-
-// deletbtn
-let DelEle=document.createElement("span");
-DelEle.style.margin="40px";
-let Deltxt=document.createTextNode(cart.qunatity);
-DelEle.appendChild(Deltxt);
-nameEle.append(DelEle);
-
-// plustBtn
-let plusEle=document.createElement("span");
-plusEle.className="plus-btn";
-plusEle.dataset.id=cart.qunatity;
-plusEle.style.margin="40px";
-let plustxt=document.createTextNode("+");
-plusEle.appendChild(plustxt);
-// minusbtn
-let minusEle=document.createElement("span");
-minusEle.className="remove-item";
-minusEle.style.margin="20px";
-let minustxt=document.createTextNode("-");
-minusEle.appendChild(minustxt);
-nameEle.append(minusEle);
-nameEle.append(plusEle);
+// get all data cars from memory
+const getCartsFromlocalStorge=()=>{
+if ( window.localStorage.getItem(('items'))
+){
+    alllistCarts= JSON.parse(window.localStorage.getItem('items'));  
+    addCartToPage();
+}
+}
 
 
 
 
+let shopnumber=document.querySelector('.shopnumber');
+let cartcontainer=document.querySelector('.cart-container');
+let totelcount=document.querySelector('.totel-count');
+let totelPrice=document.querySelector('.totelPrice');
+let cartproducts=document.querySelector('.cart-products');
+let shopingicon=document.querySelector('.icon-cart ');
+let closeCart=document.getElementById('close-Cart');
+let Totprice=document.querySelector('.Tot-price');
+// displayShoping Cart
+shopingicon.addEventListener(('click'),()=>{
+cartproducts.classList.add('active');
 
-shopingcart.appendChild(divcart);
+});
 
+// closing Cart
+closeCart.addEventListener(('click'),()=>{
+
+cartproducts.classList.remove('active');
 
 });
 
 
-}
 
+
+const addCartToPage=()=>{
+    let sumallquintity=0;
+    let allprictot=0;
+    if (alllistCarts.length > 0){
+        cartcontainer.innerHTML='';
+        shopnumber.innerHTML='';
+        Totprice.innerHTML='';
+
+        alllistCarts.forEach((cart)=>{
+            let indexofproduct=foodList.findIndex((value)=>value.id==cart.selectedid);
+            let indexofcarts=foodList[indexofproduct];
+            // number of products  added in  cart
+            let totprice=indexofcarts.price * cart.qunatity;
+            sumallquintity=sumallquintity + cart.qunatity;
+            // shopnumber.innerHTML=sumallquintity;
+            // // totel of all products in the cart
+             let allpricetotel= allprictot+(sumallquintity * indexofcarts.price)  ;
+        
+            
+            // addimagetoCart
+
+let divbox=document.createElement("div");
+divbox.dataset.id=cart.selectedid;
+divbox.className="box";
+let divimage=document.createElement("div");
+divimage.className='cart-image';
+// divcart.dataset.id=cart.selectedid;
+let imageele=document.createElement("img");
+imageele.src=`${indexofcarts.image}`;
+imageele.style.height='60px';
+imageele.style.width='60px';
+
+let imageData=document.createTextNode(imageele);
+
+imageele.appendChild(imageData);
+
+divimage.appendChild(imageele);
+divbox.appendChild(divimage);
+
+// firstPricev
+
+let deleteEle=document.createElement("img");
+deleteEle.src='icons/delete.png'
+deleteEle.className='deleteBtn';
+deleteEle.style.background='#fff';
+deleteEle.style.height='28px';
+deleteEle.style.width='28px';
+deleteEle.style.padding='6px';
+deleteEle.style.borderRadius='10px';
+let deleteTxt=document.createTextNode(deleteEle);
+deleteEle.appendChild(deleteTxt);
+divbox.appendChild(deleteEle);   
+
+            let infodiv=document.createElement("div");
+            infodiv.className="info";
+            let infoele1=document.createElement("h4");
+            let nametx=document.createTextNode(indexofcarts.name);
+            infoele1.appendChild(nametx);
+            infodiv.append(infoele1);
+        
+            let infoele2=document.createElement("h5");
+            let nametx2=document.createTextNode(totprice);
+            infoele2.appendChild(nametx2);
+            infodiv.append(infoele2);
+            divbox.appendChild(infodiv);
+    
+            cartcontainer.appendChild(divbox);
+
+            // divbox.appendChild(totelPrice);
+
+
+
+
+// add delete button  
+
+
+
+
+
+
+// counter increasBtn
+let divCounter=document.createElement("div");
+divCounter.className='counter';
+let descreasBtn=document.createElement("span");
+descreasBtn.className='minus';
+let descreasTxt=document.createTextNode('-');
+descreasBtn.appendChild(descreasTxt);
+divCounter.append(descreasBtn);
+
+// number
+let numberCounter=document.createElement("span");
+numberCounter.className='counter-num';
+let numberTxt=document.createTextNode(cart.qunatity);
+numberCounter.appendChild(numberTxt);
+divCounter.append(numberCounter);
+
+// increamentBtn
+
+let increasmentBtn=document.createElement("span");
+increasmentBtn.className='plus';
+let increasmenTxt=document.createTextNode('+');
+increasmentBtn.appendChild(increasmenTxt);
+divCounter.append(increasmentBtn);
+
+
+// insert counter div  into box div
+divbox.appendChild(divCounter);
+
+shopnumber.innerHTML=sumallquintity;
+Totprice.innerHTML=allpricetotel;
+
+
+
+
+
+        })}
+
+    }
+
+
+// delete products from cart Page
 
 document.addEventListener("click",(e)=>{
-    if (e.target.classList.contains('plus-btn')|| e.target.classList.contains('remove-item') ){
-        // alert(e.target.parentElement.className);
-        // totel=counter
-    let product_id=e.target.parentElement.parentElement.dataset.id;
-    // console.log(product_id);
-let type="remove-item";
-if (e.target.classList.contains('plus-btn')){
-     type="plus-btn";
+let target=e.target;
+if (target.classList.contains('deleteBtn')){
+let Deleteproduct=e.target.parentElement.dataset.id;
+deleteFromCart(Deleteproduct);
 }
-changeQuaintity(product_id,type);
-}
-    });
 
+});
 
-const changeQuaintity=(product_id,type)=>{
-let quititypotion=listOfCarts.findIndex((value)=>value.selectedid==product_id);
-
-if (type=='plus-btn'){
-    listOfCarts[quititypotion].qunatity=listOfCarts[quititypotion].qunatity +1;
-
-}
-else if (type=="remove-item"){
-    if (listOfCarts[quititypotion].qunatity!=0){
-        listOfCarts[quititypotion].qunatity=listOfCarts[quititypotion].qunatity -1;
-
-
-    }
-    
-     
-    }
-
+// delete product from shoping cart
+const deleteFromCart=(id)=>{
+let deletIndexValue=alllistCarts.findIndex((value)=>value.selectedid==id);
+alllistCarts.splice(deletIndexValue,1);
 addCartToPage();
 
 }
 
+document.addEventListener("click",(e)=>{
+
+if (e.target.classList.contains('minus') || e.target.classList.contains('plus')){
+let postionindex=e.target.parentElement.parentElement.dataset.id;
 
 
+let type="minus";
+if (e.target.classList.contains('plus')){
+type="plus";
 
-showdata();
-
-
-
-
-
-
-
-
-
-// outsite------------------------
-
-// wow = new WOW();
-// wow.init();
-// $(document).ready(function(e) {
-
-// $('#video-icon').on('click',function(e){
-// e.preventDefault();
-// $('.video-popup').css('display','flex');
-// $('.iframe-src').slideDown();
-// });
-// $('.video-popup').on('click',function(e){
-// var $target = e.target.nodeName;
-// var video_src = $(this).find('iframe').attr('src');
-// if($target != 'IFRAME'){
-// $('.video-popup').fadeOut();
-// $('.iframe-src').slideUp();
-// $('.video-popup iframe').attr('src'," ");
-// $('.video-popup iframe').attr('src',video_src);
-// }
-// });
-
-// $('.slider').bxSlider({
-// pager: false
-// });
-// });
-
-// $(window).on("scroll",function () {
-
-// var bodyScroll = $(window).scrollTop(),
-// navbar = $(".navbar");
-
-// if(bodyScroll > 50){
-// $('.navbar-logo img').attr('src','images/logo-black.png');
-// navbar.addClass("nav-scroll");
-
-// }else{
-// $('.navbar-logo img').attr('src','images/logo.png');
-// navbar.removeClass("nav-scroll");
-// }
-
-// });
-// $(window).on("load",function (){
-// var bodyScroll = $(window).scrollTop(),
-// navbar = $(".navbar");
-
-// if(bodyScroll > 50){
-// $('.navbar-logo img').attr('src','images/logo-black.png');
-// navbar.addClass("nav-scroll");
-// }else{
-// $('.navbar-logo img').attr('src','images/logo-white.png');
-// navbar.removeClass("nav-scroll");
-// }
-
-// $.scrollIt({
-
-// easing: 'swing',      // the easing function for animation
-// scrollTime: 900,       // how long (in ms) the animation takes
-// activeClass: 'active', // class given to the active nav element
-// onPageChange: null,    // function(pageIndex) that is called when page is changed
-// topOffset: -63
-// });
-// });
+}
+changeQuaintity(postionindex,type);
+}
+});
 
 
+const changeQuaintity=(postionindex,type)=>{
+let quititypotion=alllistCarts.findIndex((value)=>value.selectedid==postionindex);
+
+if (type=='plus'){
+alllistCarts[quititypotion].qunatity=alllistCarts[quititypotion].qunatity +1;
 
 
+}
+else if (type=="minus"){
+alllistCarts[quititypotion].qunatity=alllistCarts[quititypotion].qunatity -1;
+
+}
 
 
+else  {
+    alert("bb");
+    // alllistCarts.splice(quititypotion,1)
+    // console.log(alllistCarts);
+   
+}
+
+addCartToPage();
+// getCartsFromlocalStorge();
+// getCartsFromlocalStorge();
 
 
+}
 
 
+// tistemuns -------------funstions
 
+let tistemunsboxs=document.querySelectorAll('.tistemuns-boxs .box-cart');
+let tistemunsboxsList=Array.from(tistemunsboxs);
+console.log(tistemunsboxsList);
+let rightarrow=document.querySelector('.right-arrow');
+let leftarrowBtn=document.querySelector('.left-arrow');
+
+let currentSlidenumber=0;
+
+
+for (let i=currentSlidenumber ;i<tistemunsboxsList.length;i++);
+
+
+rightarrow.addEventListener(('click'),()=>{
+    
+    removeActive();
+    tistemunsboxsList[currentSlidenumber].classList.add('active');
+    currentSlidenumber++;
 
     
+    });
+
+ 
+    
+
+function nextSlider(){
+
+    currentSlidenumber++
+}
+
+function previusSlider(){
+    currentSlidenumber--;
+}
+
+
+
+// remove avtive class form all list boxes 
+
+function removeActive(){
+    tistemunsboxs.forEach((card)=> card.classList.remove('active'));
+
+
+}
 
 
 
@@ -618,10 +505,12 @@ showdata();
 
 
 
+// get all data form local storge 
+
+getCartsFromlocalStorge();
 
 
-
-
+// --------------------get data from joson file ------------------------------
 
 
 
