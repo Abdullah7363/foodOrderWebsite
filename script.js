@@ -3,7 +3,7 @@ const foodList=
 [
     {
     "id":1,
-    "name":"salad",
+    "name":"chicken",
     "price":4000,
     "rate":4.3 ,
     "image":"images/main/food1.png",
@@ -12,7 +12,7 @@ const foodList=
     },
     {
     "id":2,
-    "name":"passta",
+    "name":"soup",
     "price":2000,
     "rate":4.6 ,
     "image":"images/main/food2.png",
@@ -42,7 +42,7 @@ const foodList=
     },
     {
     "id":5,
-    "name":"salad",
+    "name":"spaghetti",
     "price":5000,
     "rate":3.5 ,
     "image":"images/main/food6.png",
@@ -51,7 +51,7 @@ const foodList=
     },
     {
     "id":6,
-    "name":"pizza",
+    "name":"salad",
     "price":5000,
     "rate":3.5 ,
     "image":"images/main/food8.png",
