@@ -6,8 +6,8 @@ const foodList=
     "name":"chicken",
     "price":4000,
     "rate":4.3 ,
-    "image":"images/main/food1.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food1.png",
+    "star_icon":"../images/main/star.png"
     
     },
     {
@@ -15,8 +15,8 @@ const foodList=
     "name":"soup",
     "price":2000,
     "rate":4.6 ,
-    "image":"images/main/food2.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food2.png",
+    "star_icon":"../images/main/star.png"
     
     
     }
@@ -26,8 +26,8 @@ const foodList=
     "name":"pizza",
     "price":5000,
     "rate":3.5 ,
-    "image":"images/main/food7.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food7.png",
+    "star_icon":"../images/main/star.png"
     
     
     },
@@ -36,8 +36,8 @@ const foodList=
     "name":"pizza",
     "price":5000,
     "rate":3.5 ,
-    "image":"images/main/food5.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food5.png",
+    "star_icon":"../images/main/star.png"
     
     },
     {
@@ -45,8 +45,8 @@ const foodList=
     "name":"spaghetti",
     "price":5000,
     "rate":3.5 ,
-    "image":"images/main/food6.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food6.png",
+    "star_icon":"../images/main/star.png"
     
     },
     {
@@ -54,8 +54,8 @@ const foodList=
     "name":"salad",
     "price":5000,
     "rate":3.5 ,
-    "image":"images/main/food8.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food8.png",
+    "star_icon":"../images/main/star.png"
     
     },
     {
@@ -63,8 +63,8 @@ const foodList=
     "name":"pizza",
     "price":5000,
     "rate":3.5 ,
-    "image":"images/main/food9.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food9.png",
+    "star_icon":"../images/main/star.png"
     
     },
     
@@ -73,8 +73,8 @@ const foodList=
     "name":"salad",
     "price":5000,
     "rate":3.5 ,
-    "image":"images/main/food11.png",
-    "star_icon":"images/main/star.png"
+    "image":"../images/main/food11.png",
+    "star_icon":"../images/main/star.png"
     
     }
     
@@ -195,7 +195,6 @@ let countNum=1;
 const addcartstoCart=(targetindex)=>{
 let indexCart=alllistCarts.findIndex((value)=>value.selectedid===targetindex);
 
-console.log(indexCart);
 if (alllistCarts.length <= 0){
     alllistCarts=[
         {
@@ -310,7 +309,7 @@ divbox.appendChild(divimage);
 // firstPricev
 
 let deleteEle=document.createElement("img");
-deleteEle.src='icons/delete.png'
+deleteEle.src='../icons/delete.png'
 deleteEle.className='deleteBtn';
 deleteEle.style.background='#fff';
 deleteEle.style.height='28px';
